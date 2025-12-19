@@ -1,0 +1,85 @@
+:root {
+    --light-pink: #ffe4e8;   /* Soft Aesthetic Pink */
+    --sparkle-white: #ffffff; /* Glitter color */
+    --accent-pink: #ffb6c1;  /* Deeper pink for borders */
+    --text-color: #5a3e3e;   /* Soft brown text for readability */
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: 'Segoe UI', sans-serif;
+    color: var(--text-color);
+    
+    /* This creates the light pink base */
+    background-color: var(--light-pink);
+    
+    /* This creates the 'Sparkle' effect using tiny repeating dots */
+    background-image: 
+        radial-gradient(var(--sparkle-white) 1px, transparent 1px),
+        radial-gradient(var(--sparkle-white) 1px, transparent 1px);
+    background-size: 40px 40px;
+    background-position: 0 0, 20px 20px;
+    background-attachment: fixed;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 32px;
+    text-align: center;
+    color: var(--accent-pink);
+    text-shadow: 2px 2px 0px white;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: rgba(255, 255, 255, 0.7); /* See-through white */
+    border: 2px dashed var(--accent-pink); /* Cute dashed border */
+    border-radius: 40px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.post {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 650px;
+    border: 1px solid var(--light-pink);
+    box-shadow: 0 4px 15px rgba(255, 182, 193, 0.3);
+}
+
+.nav-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px;
+    position: sticky; 
+    top: 0;
+    background: rgba(255, 255, 255, 0.8); 
+    backdrop-filter: blur(8px);
+    z-index: 1000;
+    border-bottom: 2px solid var(--accent-pink);
+    margin-bottom: 20px;
+}
+
+.tab {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+    padding: 8px 16px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.tab:hover {
+    background-color: var(--accent-pink);
+    color: white;
+}
